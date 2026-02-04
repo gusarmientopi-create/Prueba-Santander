@@ -22,7 +22,7 @@ public class CardController {
     @PostMapping
     public ResponseEntity<?> emitir(@RequestBody Map<String, String> request) {
         try {
-            // El PDF pide "productid" (todo minúscula)
+      
             String productId = request.get("productid");
             String holderName = request.get("holderName");
             
